@@ -11,7 +11,7 @@ const ChecksPill = ({ text, passed }: ChecksPillProps) => {
   return (
     <div
       className={cn(
-        "border-[0.7px] border-[#7D7D7D] px-3 py-[3px] rounded-3xl text-[11px] font-medium flex items-center gap-1 bg-transparent transition",
+        "border-[0.7px] border-[#7D7D7D]/50 px-3 py-[3px] rounded-3xl text-[11px] font-medium flex items-center gap-1 bg-transparent transition",
         passed && "bg-purple-600 text-white border-purple-600"
       )}
     >

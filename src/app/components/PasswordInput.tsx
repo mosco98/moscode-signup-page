@@ -127,9 +127,9 @@ const PasswordInput = ({
         onBlur={() => setIsFocused(false)}
       >
         <input
-          className="h-12 block w-full outline-none border border-transparent bg-white p-[14px] rounded-l-lg focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:border-[#0D0D0D]/50 transition text-[#0D0D0D] placeholder:text-[#0D0D0D]/60"
+          className="h-12 block w-full outline-none border border-transparent bg-white p-[14px] rounded-l-lg focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:border-purple-600 text-[#0D0D0D] placeholder:text-[#0D0D0D]/60 transition-all duration-300 ease-in-out"
           type={isPasswordHidden ? "password" : "text"}
-          placeholder="you@email.com"
+          placeholder="***********"
           id="password"
           ref={inputRef}
           onChange={handleInputChange}

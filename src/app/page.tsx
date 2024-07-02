@@ -32,11 +32,11 @@ const HomePage = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-[380px] w-full">
-          <div className="text-center">
-            <h1 className="text-3xl font-semibold text-white">
+          <div className="text-left">
+            <h1 className="text-2xl font-semibold text-white">
               Find your dream house
             </h1>
-            <p className="mt-1">
+            <p className="mt-1 text-sm">
               Start your journey to owning your dream house
             </p>
           </div>
@@ -48,7 +48,7 @@ const HomePage = () => {
               </label>
 
               <input
-                className="h-12 block w-full outline-none border border-transparent bg-white p-[14px] rounded-lg focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:border-[#0D0D0D]/50 transition text-[#0D0D0D] placeholder:text-[#0D0D0D]/60"
+                className="h-12 block w-full outline-none border border-transparent bg-white p-[14px] rounded-lg focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:border-purple-600 text-[#0D0D0D] placeholder:text-[#0D0D0D]/60 transition-all duration-300 ease-in-out"
                 type="email"
                 placeholder="you@email.com"
                 id="email"
@@ -109,9 +109,9 @@ const HomePage = () => {
             <div className="mt-10 text-sm font-medium space-y-2.5">
               <button
                 className={cn(
-                  "h-11 bg-black text-white w-full rounded-3xl hover:opacity-85 transition shadow-md",
+                  "h-11 bg-purple-600 text-white w-full rounded-3xl hover:opacity-85 transition shadow-md",
                   (!checksPassed || !password) &&
-                    "bg-[#7D7D7D] opacity-80 pointer-events-none"
+                    "bg-purple-400 opacity-80 pointer-events-none"
                 )}
                 disabled={!checksPassed || !password}
               >
