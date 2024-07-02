@@ -214,7 +214,12 @@ const HomePage = () => {
         </div>
       </motion.div>
 
-      <div className="fixed bottom-2 right-2 z-50 text-xs bg-black px-3 py-1.5 rounded-lg">
+      <motion.div
+        className="fixed bottom-2 right-2 z-50 text-xs bg-black px-3 py-1.5 rounded-lg"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.25, delay: 1 }}
+      >
         <p>
           Created by{" "}
           <a
@@ -225,7 +230,7 @@ const HomePage = () => {
             @meandchimso
           </a>
         </p>
-      </div>
+      </motion.div>
     </>
   );
 };
